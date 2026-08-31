@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>HTML
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        header {
+            background-color: #2F4F4F;
+            color: #F0F8FF;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            border: 5px solid #90EE90; /* Corrigido de 'boreder' para 'border' */
+        }
+        
+        main {
+            background-color: #FFFFFF;
+            color: #000000;
+            max-width: 800px;
+            margin: 0 auto; 
+            padding: 20px; /* Adicionado para o conteúdo não ficar colado nas bordas */
+        }
+
+        /* ======================================================= */
+        /* CÓDIGO DO CARRO (CSS) - ADICIONADO AQUI DENTRO DO STYLE */
+        /* ======================================================= */
+        
+        .cenario {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            height: 300px;
+            margin: 40px auto;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            background: #1a1a1a; /* Fundo escuro para o carro se destacar no blog */
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .estrada {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 50px;
+            background: #222;
+        }
+
+        .linha-estrada {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            height: 4px;
+            background: repeating-linear-gradient(90deg, #fff, #fff 20px, transparent 20px, transparent 40px);
+            transform: translateY(-50%);
+        }
+
+        .carro {
+            position: relative;
+            width: 400px;
+            height: 130px;
+            bottom: 25px;
+            z-index: 2;
+        }
+
+        .corpo {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 70px;
+            background: #d61c1c;
+            border-radius: 25px 75px 12px 12px;
+            box-shadow: inset -8px -8px 15px rgba(0,0,0,0.3), 0 8px 15px rgba(0,0,0,0.5);
+        }
+
+        .teto {
+            position: absolute;
+            top: 15px;
+            left: 90px;
+            width: 200px;
+            height: 50px;
+            background: #d61c1c;
+            border-radius: 120px 100px 0 0;
+        }
+
+        .vidro-frente {
+            position: absolute;
+            top: 22px;
+            left: 115px;
+            width: 80px;
+            height: 35px;
+            background: #000000; /* Vidro totalmente preto */
+            border-radius: 50px 8px 0 0;
+            transform: skewX(-10deg);
+            border-right: 3px solid #d61c1c;
+        }
+
+        .vidro-tras {
+            position: absolute;
+            top: 22px;
+            left: 200px;
+            width: 75px;
+            height: 35px;
+            background: #000000; /* Vidro totalmente preto */
+            border-radius: 0 60px 0 0;
+            transform: skewX(15deg);
+        }
+
+        .farol-frente {
+            position: absolute;
+            right: 0;
+            top: 25px;
+            width: 25px;
+            height: 12px;
+            background: #ffeb3b;
+            border-radius: 0 12px 4px 0;
+            box-shadow: 0 0 12px #ffeb3b;
+        }
+
+        .farol-tras {
+            position: absolute;
+            left: 0;
+            top: 30px;
+            width: 12px;
+            height: 15px;
+            background: #ff1744;
+            border-radius: 4px 0 0 4px;
+        }
+
+        .roda {
+            position: absolute;
+            bottom: -20px;
+            width: 70px;
+            height: 70px;
+            background: #111;
+            border: 5px solid #333;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .roda-frente { right: 40px; }
+        .roda-tras { left: 50px; }
+
+        .calota {
+            width: 35px;
+            height: 35px;
+            background: #777;
+            border-radius: 50%;
+            border: 3px dashed #eee;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu blog de terror</h1>
+        <p>Vou compartilhar conhecimentos sobre a área de horror</p>
+    </header>
+    
+    <main>
+        <h2>Meu primeiro post</h2>
+        <p>Por: Djota Pinheiro</p>
+        <p>Boas-vindas ao meu novo blog!</p>
+        <p>Vou mostrar coisas misteriosas e assustadoras da área de horror e coisas sobrenaturais.</p>
+
+        <!-- ======================================================= -->
+        /* CÓDIGO DO CARRO (HTML) - ADICIONADO AQUI DENTRO DO MAIN */
+        <!-- ======================================================= -->
+        <div class="cenario">
+            <div class="carro">
+                <div class="teto"></div>
+                <div class="vidro-frente"></div>
+                <div class="vidro-tras"></div>
+                <div class="corpo">
+                    <div class="farol-frente"></div>
+                    <div class="farol-tras"></div>
+                </div>
+                <div class="roda roda-tras"><div class="calota"></div></div>
+                <div class="roda roda-frente"><div class="calota"></div></div>
+            </div>
+            <div class="estrada">
+                <div class="linha-estrada"></div>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        header {
+            background-color: #2F4F4F;
+            color: #F0F8FF;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            boreder:5px solid #90EE90
+        }
+        
+        main {
+            background-color: #FFFFFF;
+            color: #000000;
+            max-width: 800px;
+            margin: 0 auto; 
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+    
+        <h1>Meu blog de terror</h1>
+        <p>Vou compartilhar conhecimentos sobre a área de horror</p>
+    </header>
+    
+    <main>
+        <h2>Meu primeiro post</h2>
+        <p>Por: Djota Pinheiro</p>
+        <p>Boas-vindas ao meu novo blog!</p>
+        <p>Vou mostrar coisas misteriosas e assustadoras da área de horror e coisas sobrenaturais.</p>
+    </main>
+</body>
+</html>
